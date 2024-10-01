@@ -270,9 +270,9 @@ def before_request():
     load_dotenv()
     g.db = mysql.connector.connect(
         user="root",
-        password=os.getenv("DB_PASSWORD"),
+        password='svrsvrsvr',
         host="127.0.0.1",
-        database="popcornpicksdb",
+        database="PopcornPicksDB",
     )
 
 
@@ -286,4 +286,4 @@ def after_request(response):
 
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=5001)
